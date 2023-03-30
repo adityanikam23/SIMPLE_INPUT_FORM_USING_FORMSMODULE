@@ -1,0 +1,55 @@
+<h1>form validation</h1>
+
+<div id="maindiv">
+  <div class="firstdiv">
+
+    <br>
+    <label>enter full name:</label><br>
+    <input [(ngModel)]="myinput1" type="text" placeholder="please enter your name" required /><br><br>
+
+    <label>enter your address:</label><br>
+    <input [(ngModel)]="myinput2" type="text" placeholder="please enter your address" required /><br><br>
+
+    <label>enter your mobile no:</label><br>
+    <input [(ngModel)]="myinput3" type="text" placeholder="please enter your mobile no" required maxlength="10" /><br><br>
+
+    <label>enter your email address:</label><br>
+    <input [(ngModel)]="myinput4" type="text" placeholder="please enter your email address" required /><br><br>
+
+
+    <button (click)="submitform()" type="button">submit here</button>
+
+    <button type="button" (click)="printpage()">print page</button>
+
+  </div>
+</div>
+<br><br><br><br><br>
+
+
+
+<div id="maindiv2">
+  <div class="seconddiv">
+
+    <br>
+    <label>your name:</label><br>
+    <input value="{{information.name}}" type="text" readonly><br><br>
+
+    <label>your address:</label><br>
+    <input value="{{information.address}}" type="text" readonly><br><br>
+
+    <label>your mobile no:</label><br>
+    <input value="{{information.mobno}}" type="text" readonly><br><br>
+
+    <label>your email address:</label><br>
+    <input value="{{information.Email}}" type="text" readonly><br><br>
+
+
+  </div>
+</div>
+<br><br><br>
+<hr>
+<!-- 
+<div class="screen">
+     
+</div>
+<input value="" [(ngModel)]="fortext" class="forpractice" placeholder="TYPE FOR PRACTICE" type="text"> -->
